@@ -1,0 +1,6 @@
+[submodule "assets/DigitaPalavra"]
+	path = assets/jogos/DigitaPalavra
+	url = git@github.com:josecprocha/DigitaPalavra.git
+[submodule "assets/jogos/FalaPalavra"]
+	path = assets/jogos/FalaPalavra
+	url = git@github.com:josecprocha/FalaPalavra.git
