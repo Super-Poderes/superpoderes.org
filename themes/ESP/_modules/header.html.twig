@@ -1,0 +1,48 @@
+<nav class="navbar navbar-dark bg-dark navbar-expand-md"> <!-- Navbar: cor e "collapsing" -->
+
+  {# Nome da marca sem link #}
+  <span class="navbar-brand mb-0 h1">
+    <strong>ESCOLA DE SUPER PODERES</strong>
+  </span>
+
+  {# Botão que aparece quando a janela é pequena #}
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span> {# Ícone do botão #}
+  </button>
+
+  {# Conteúdo do cabeçalho #}
+  <div class="collapse navbar-collapse" id="navbarPrincipal">
+
+    <ul class="navbar-nav mr-auto"> {# Lista de itens do menu principal #}
+
+      <li class="nav-item {% if page.title == "Início" %} active {% endif %}">
+      <a class="nav-link" href="{{ base_url }}">
+        <i class="fas fa-home"></i> Início
+      </a>
+      </li>
+      <li class="nav-item {% if page.title == "Pesquisa" %} active {% endif %}">
+      <a class="nav-link" href="{{ base_url }}/pesquisa">
+        <i class="fab fa-react"></i> Pesquisa
+      </a>
+      </li>
+      <li class="nav-item {% if page.title == "Blog" %} active {% endif %}">
+      <a class="nav-link" href="https://blog.superpoderes.org">
+        <i class="fab fa-wordpress"></i> Blog
+      </a>
+      </li>
+      <li class="nav-item {% if page.title == "Sobre" %} active {% endif %}">
+      <a class="nav-link" href="{{ base_url }}/sobre">
+        <i class="fas fa-info-circle"></i> Sobre
+      </a>
+      </li>
+      <li class="nav-item {% if page.title == "Contato" %} active {% endif %}">
+      <a class="nav-link" href="{{ base_url }}/contato">
+        <i class="far fa-envelope"></i> Contato
+      </a>
+      </li>
+    </ul> {# Fim da lista de itens do menu principal #}
+
+  </div>
+
+</nav> {# Fim do navbar #}
+

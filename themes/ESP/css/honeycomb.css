@@ -1,0 +1,51 @@
+/**
+ * baseado no trabalho de alyen
+ * disponível em: https://codepen.io/alyen/pen/GrMjVx
+ * e que provavelmente foi "pego" de https://carrd.co/
+ */
+
+.honeycomb {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 0;
+  text-align: center;
+
+  /* background-image: url("https://carrd.co/assets/images/bg.svg"),linear-gradient(45deg, #6E436C 25%, #2A4584 75%); */
+  background-size: cover, cover;
+  background-position: top, center;
+  background-repeat: no-repeat, no-repeat;
+  cursor: default;
+}
+
+/* não logado */
+.nouser {
+  background-image: url('../../svg/honeycomb.svg'),
+    linear-gradient(0deg, #060 10%, #2a4584 80%);
+}
+
+/* aluno */
+.player {
+  background-image: url('../../svg/honeycomb.svg'),
+    linear-gradient(0deg, #060 10%, #ffe608 80%);
+}
+
+/* professor ou outro profissional */
+.pro {
+  background-image: url('../../svg/honeycomb.svg'),
+    linear-gradient(0deg, #2a4584 10%, #b723d4 80%);
+}

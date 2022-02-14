@@ -1,0 +1,58 @@
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="{{ site_author }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Document Title
+  ============================================= -->
+  <title>{{ config.site_title }}{% if meta.title %} | {{ meta.title }}{% endif %}</title>
+  {% if meta.description %}
+    <meta name="description" content="{{ meta.description|striptags }}" />
+  {% else %}
+    <meta name="description" content="{{ config.site_description|striptags }}" />
+  {% endif %}
+  {% if meta.robots %}
+    <meta name="robots" content="{{ meta.robots }}" />
+  {% endif %}
+  {% if current_page %}
+    <link rel="canonical" href="{{ current_page.url }}" />
+  {% endif %}
+
+  <!--  Stylesheet
+  ============================================= -->
+  <link rel="stylesheet" href="{{ theme_url }}/css/app.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ theme_url }}/css/honeycomb.css">
+  {% block css %}
+  {% endblock %}
+
+  <!-- https://realfavicongenerator.net
+  ============================================= -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ theme_url }}/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ theme_url }}/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ theme_url }}/favicon/favicon-16x16.png">
+  <link rel="manifest" href="{{ theme_url }}/favicon/site.webmanifest">
+  <link rel="mask-icon" href="{{ theme_url }}/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+  <!--  Scripts
+  ============================================= -->
+  <!-- Google adsense -->
+  {% if config.adsense_client %}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ config.adsense_client }}"
+            crossorigin="anonymous"></script>
+  {% endif %}
+  <!-- https://www.mcafeesecure.com -->
+  <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script
+  <!-- Bootstrap Sweet Alert https://cdnjs.com/libraries/bootstrap-sweetalert -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.js"></script>
+  <!-- Konami Code -->
+  <script src="{{ theme_url }}/js/konami.js"></script>
+  <audio id="AYBABTU">
+    <source src="{{ assets_url }}/audio/invasion_of_the_gabber_rob.ogg" type="audio/ogg">
+    <source src="{{ assets_url }}/audio/invasion_of_the_gabber_rob.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+

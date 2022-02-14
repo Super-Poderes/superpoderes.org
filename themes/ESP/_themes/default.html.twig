@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="{{ alanguage ?? 'pt-BR' }}">
+<head>
+  {{ include('_modules/head.html.twig') }}
+  {{ head }}
+</head>
+
+<body class="colmeia">
+  <header id="header" class="">
+    {{ include('_modules/header.html.twig') }}
+  </header>
+
+  <main id="main">
+    {{ content }}
+  </main>
+
+  <footer>
+    {{ include('_modules/footer.html.twig') }}
+  </footer>
+  {{ scripts }}
+</body>
+</html>
