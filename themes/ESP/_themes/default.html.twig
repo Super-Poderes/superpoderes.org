@@ -2,21 +2,24 @@
 <html dir="ltr" lang="{{ alanguage ?? 'pt-BR' }}">
 <head>
   {{ include('_modules/head.html.twig') }}
-  {{ head }}
+  {% block head %}
+  {% endblock %}
 </head>
 
-<body class="colmeia">
+<body class="colmeia nouser">
   <header id="header" class="">
     {{ include('_modules/header.html.twig') }}
   </header>
 
   <main id="main">
-    {{ content }}
+    {% block content %}
+    {% endblock %}
   </main>
 
   <footer>
     {{ include('_modules/footer.html.twig') }}
   </footer>
-  {{ scripts }}
+  {% block script %}
+  {% endblock %}
 </body>
 </html>

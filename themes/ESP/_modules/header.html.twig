@@ -21,7 +21,7 @@
       </a>
       </li>
       <li class="nav-item {% if page.title == "Pesquisa" %} active {% endif %}">
-      <a class="nav-link" href="{{ base_url }}/pesquisa">
+      <a class="nav-link" href="{{ base_url }}?pesquisa">
         <i class="fab fa-react"></i> Pesquisa
       </a>
       </li>
@@ -31,12 +31,13 @@
       </a>
       </li>
       <li class="nav-item {% if page.title == "Sobre" %} active {% endif %}">
-      <a class="nav-link" href="{{ base_url }}/sobre">
+      <a class="nav-link" href="{{ base_url }}?sobre">
         <i class="fas fa-info-circle"></i> Sobre
       </a>
       </li>
       <li class="nav-item {% if page.title == "Contato" %} active {% endif %}">
-      <a class="nav-link" href="{{ base_url }}/contato">
+{#      <a class="nav-link" href="{{ base_url }}?contato">#}
+        <a class="nav-link" href="{{ assets_url }}/construct/SistemaSolar/">
         <i class="far fa-envelope"></i> Contato
       </a>
       </li>

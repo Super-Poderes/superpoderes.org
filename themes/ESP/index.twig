@@ -4,6 +4,17 @@
 {% endblock %}
 
 {% block content %}
+
+  {% if meta.title == "Início" %}
+    {{ include('_pages/home.html.twig') }}
+  {% elseif meta.title == "Contato" %}
+    {{ include('_pages/contato.html.twig') }}
+  {% elseif meta.title == "Pesquisa" %}
+    {{ include('_pages/pesquisa.html.twig') }}
+  {% elseif meta.title == "Sobre" %}
+    {{ include('_pages/sobre.html.twig') }}
+  {% endif %}
+
 {% endblock %}
 
 {% block scripts %}
