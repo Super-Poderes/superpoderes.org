@@ -7,3 +7,6 @@
 [submodule "assets/jogos/GnuMuncherWeb"]
 	path = assets/jogos/GnuMuncherWeb
 	url = git@github.com:josecprocha/GnuMuncherWeb.git
+[submodule "assets/jogos/SistemaSolar"]
+	path = assets/jogos/SistemaSolar
+	url = git@github.com:josecprocha/SistemaSolar.git
