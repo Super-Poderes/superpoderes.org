@@ -4,3 +4,6 @@
 [submodule "assets/jogos/FalaPalavra"]
 	path = assets/jogos/FalaPalavra
 	url = git@github.com:josecprocha/FalaPalavra.git
+[submodule "assets/jogos/GnuMuncherWeb"]
+	path = assets/jogos/GnuMuncherWeb
+	url = git@github.com:josecprocha/GnuMuncherWeb.git
